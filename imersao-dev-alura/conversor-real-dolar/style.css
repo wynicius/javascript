@@ -48,8 +48,8 @@ form{
     h2{
         box-sizing: border-box;
         margin:10px auto auto auto;
-        height: calc(100% - 500px);
-        width: calc(100% - 365px);
+        height: calc(0% + 5px);
+        width: calc(0% + 320px);
         color: white;
         text-align: center;
         border-radius: 5px;
