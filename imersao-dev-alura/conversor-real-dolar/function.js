@@ -4,10 +4,9 @@ function Converter() {
   var valorEmReal = parseFloat(valor); // transformação do valor de string para float
   
   var valorEmDolar = valorEmReal * 5.26 // a conversão em dolar
-    console.log(valorEmDolar);
   
   var elementoValorConvertido = document.getElementById("valorConvertido");
-  var valorConvertido = "o valor em dolar é $ " + valorEmDolar;
+  var valorConvertido = "O valor em dólar é $ " + valorEmDolar;
   elementoValorConvertido.innerHTML = valorConvertido;
   event.preventDefault()
 }
