@@ -3,25 +3,22 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 h1{
     color: white;
     text-shadow: 1px 1px 1px black;
     height: 50px;
-    margin: 50px auto 0px auto;
+    margin: 10vh auto 3vh auto;
     text-align: center;
 }
 body{
-    background: black url('https://www.remessaonline.com.br/blog/wp-content/uploads/2021/05/1-libra.jpg.optimal.jpg') center center no-repeat fixed;
-    background-size: 100% 100%;
-    font-family: Arial, Helvetica, sans-serif ;
+    background: rgb(121, 121, 252) url('https://imagens.ebc.com.br/8xKcHf5qMWbHZr32dD1CGcvbOZk=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2020-09-25t121331z_1_lynxnpeg8o13a_rtroptp_4_dolar-abre.jpg?itok=plKfd8bG') center center no-repeat fixed;
+    background-size: cover;
 }
 form{
     box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 20vh auto auto auto;
     
     border: 1px solid rgba(0, 0, 0, 0.144);
     border-radius: 5px;
@@ -44,7 +41,7 @@ form{
     }
     button{
         position: relative;
-        margin-top: 20px;
+        margin-top: 3vh;
         width: 110px;
         font-weight: bold;
         font-size: 0.9em;
