@@ -8,6 +8,7 @@ function Chutar() {
     } else if (chute>10 || chute<0) {
         msgResultado.innerHTML = "Opps... Você digitou um número não permitido!"
     } else {
-        msgResultado.innerHTML = "Você errou, o número certo era " + numeroSortido + "... mas vamos lá, tente novamente!"
+        msgResultado.innerHTML = "Você errou, o número certo era " + numeroSortido + "... mas vamos lá, atualize a página e tente novamente!"
     }
+    event.preventDefault()
 }
