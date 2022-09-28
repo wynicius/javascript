@@ -1,0 +1,5 @@
+var listaFilmes = ["https://uauposters.com.br/media/catalog/product/cache/1/small_image/333x500/9df78eab33525d08d6e5fb8d27136e95/1/7/173620140528-uau-posters-filmes-harry-potter-1-e-a-pedra-filosofal--harry-potter-and-the-sorcerer-s-stone-3.jpg", "https://m.media-amazon.com/images/I/61pGKELm21L._AC_SY679_.jpg", "https://img.elo7.com.br/product/main/2657A18/big-poster-harry-potter-e-o-prisioneiro-de-azkaban-lo3-90x60-poster.jpg", "https://br.web.img3.acsta.net/medias/nmedia/18/93/87/95/20282862.jpg", "https://br.web.img3.acsta.net/r_1280_720/medias/nmedia/18/36/32/70/18762833.jpg", "https://m.media-amazon.com/images/I/51aXA-F6lSL._AC_.jpg", "https://veja.abril.com.br/wp-content/uploads/2016/06/harry-potter-cartaz-reliquias-morte-parte1-07-original1.jpeg?quality=70&strip=info&w=366", "https://saibadesign.files.wordpress.com/2011/04/hp72.jpg?w=470"]
+
+for (var i = 0; i < listaFilmes.length; i++) {
+    document.write("<img src=" + listaFilmes[i] + ">");
+}
