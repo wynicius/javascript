@@ -1,8 +1,9 @@
 function Converter() {
   /* 
   * var valorElemento = document.getElementById("valor"); // valor é o id do <input>
-  * var valor = valorElemento.value; // aqui se usa o .value para que retorne apenar o valor inserido no input, que vem sempre em texto POR PADRÃO!
-  FAREI A TROCA DAS DUAS LINHAS POR APENAS UMA!*/
+  * var valor = valorElemento.value; // aqui se usa o .value para que retorne apenar o valor inserido no input, que * vem sempre em texto POR PADRÃO!
+  * FAREI A TROCA DAS DUAS LINHAS POR APENAS UMA!
+  */
   var valor = document.getElementById("valor").value
   var valorEmReal = parseFloat(valor); // transformação do valor de string para float
   
