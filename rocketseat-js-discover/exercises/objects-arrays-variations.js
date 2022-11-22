@@ -16,10 +16,10 @@
 
 let students = [
     {
-    name: "Mayk",
-    age: 23,
-    weight: 74.8,
-    isSubscribed: true,
+        name: "Mayk",
+        age: 23,
+        weight: 74.8,
+        isSubscribed: true,
     },
     {
         name: "John",
