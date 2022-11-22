@@ -32,9 +32,9 @@
 
 /*
     SEPARATING  STRINGS
-        Para separar um texto por espaços, pode-se usar o método split(" "), que transforma o texto em um array de strings baseado no argumento, que no caso são os espaços. 
+        Para separar um texto por espaços, pode-se usar o método split(" "), que transforma o texto em um array de strings baseado no argumento, que, no exemplo, são os espaços. 
 
-        Para juntar esse array é possível usar o método join('"), que juntaria essas palavras sem nenhum separador, porém colocando um argumento, no caso um underscore ( join("_") ) as palavras são juntadas com o argumento de separador.
+        Para juntar esse array é possível usar o método join('"), que juntaria essas palavras sem nenhum separador, porém colocando um argumento, no exemplo, um underscore ( join("_") ) as palavras são juntadas com o argumento de separador.
 */
     let phrase = "Eu quero viver o Amor!"
     let myArray = phrase.split(" ")
@@ -44,7 +44,7 @@
     console.log(phraseWithUnderline)
 
 /*
-    VERIFY IF THE TEXT CONTAINS THE WORD "AMOR"
+    VERIFY IF THE TEXT CONTAINS A SPECIFIC WORD, ON THIS CASE: "AMOR"
         Para verificar se um texto possui uma palavra específica, podemos usar o método includes(), passando como argumento a palavra a ser verificada, que retorna um valor true se encontrar a palavra, e falso se não, lembrando sempre que o método é case sensitive.
 */
     console.log(phrase.includes("Amor"))
@@ -53,7 +53,8 @@
 /*
     CREATE ARRAY WITH CONSTRUCTOR
         Para criar um array com um método construtor, usa-se new Array(args), passando como argumento o tamanho deste vetor ou os valores, por exemplo: 
-            const array = new Array("a", "b", "c"), o que, sem o método construtor, seria:
+            const array = new Array("a", "b", "c") ou const array = new Array(10),
+        o que, sem o método construtor, seria:
             const array = ['a','b','c'].
 */
     let myArrayConstructor = new Array('a', 'b', 'c')
