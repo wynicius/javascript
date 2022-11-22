@@ -9,7 +9,7 @@ function sayMyName(name) {
 }
 
 sayMyName (
-    () => {
+    )( => {
         console.log("estou em uma callback")
     }
 )
