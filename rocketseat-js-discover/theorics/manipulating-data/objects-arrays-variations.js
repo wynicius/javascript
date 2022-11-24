@@ -1,5 +1,7 @@
 /* ATTENTION, THE CODES THAT ARE COMMENTED I LEARNED IN THE COURSE, THE RUNNING ONES ARE THE EXPERIMENTS I GOT INTO */
 
+// Para criarmos um objeto utilizamos as chaves envolvendo as propriedades, que são atribuídas com dois pontos, por exemplo: const person = { name: 'John', age: 20 }, para acessar essas propriedades usamos o ".", por exemplo: console.log(person.name).
+
 // const student = {
 //     name: "Mayk",
 //     age: 23,
