@@ -13,7 +13,7 @@ let example
 // Em alguns casos é necessário o uso de ; (ponto e vírgula), como numa função auto-executável, é um dos poucos casos onde faz falta, e é em um cenário como o seguinte:
 
 /*
-    let num = 1 //;
+    let num = 1
 
     (function(){
     console.log('alo')
