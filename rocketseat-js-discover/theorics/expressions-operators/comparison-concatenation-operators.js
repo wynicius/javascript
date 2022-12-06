@@ -35,3 +35,15 @@ console.log(one < two)
 console.log(one <= two)
 console.log(one <= 1)
 console.log(one <= 0)
+/*
+
+    // Concatenation ( Concatenação )
+    // Retorna a união de duas Strings
+
+*/
+let alpha = "alpha" + 'bet' + 10
+console.log(alpha)
+
+let beta = "beta"
+beta += 'nazol' + 10
+console.log(beta)

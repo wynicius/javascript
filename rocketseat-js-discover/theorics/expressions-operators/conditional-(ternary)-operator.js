@@ -15,7 +15,7 @@
     const badBreakfast = bread && !cheese ? "I had such a great Breakfast!!" : "I didn't quite enjoy my breakfast"
     console.log(badBreakfast)
 
-//Outro exemplo: Maior de 18, Poder tirar a CNH
+// Outro exemplo: Maior de 18, Poder tirar a CNH
 
 function Person(age,condition) {
     this.age = age
