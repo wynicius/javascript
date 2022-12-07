@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    padding: 0px;
+}
+body{
+    background: lightsalmon
+}
+.converters{
+    display: inline-flex;
+    margin: 5vh 7vw;
+}
+h1{
+    margin: 20px;
+}
+input{
+    border-radius: 3px;
+    padding: 2px 0px;
+}
+button{
+    margin-top: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+#fahrenheitToC,#celsiusToF{
+    margin-top: 40px;
+    font-size: 1.1em;
+
+}

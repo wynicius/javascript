@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="temperature-convertion.js"></script>
 </head>
 <body>
-    <h1>Hello World!!</h1>
+    <h1>Conversor de Moedas</h1>
+    <h2>Do you wish to convert Celsius to Fahrenheit or to convert Fahrenheit to Celsius?</h2>
     
+        <form class="converters">
+            <label for="tempC"> <h3>Celsius(°C) to Fahrenheit(°F)</h3>
+            <br>
+            <input type="number" name="tempC" id="tempC">
+            <br>
+            <button onclick="CtoF()">Convert</button>
+            <p id="celsiusToF"></p>
+            </label>
+            
+        </form>
+        
+        <form class="converters">
+            <label for="tempF"> <h3>Fahrenheit(°F) to Celsius(°C)</h3>
+            <br>
+            <input type="number" name="tempF" id="tempF">
+            <br>
+            <button onclick="FtoC()">Convert</button>
+            <p id="fahrenheitToC"></p>
+            </label>
+            
+        </form>
+        
 </body>
 </html>
