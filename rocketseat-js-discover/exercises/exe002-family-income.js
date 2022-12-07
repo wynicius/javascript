@@ -6,7 +6,7 @@
 // Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo.
 
 
-var renda
+let renda
 let receitas = [8000,3800] , despesas = [1500, 400, 7000, 80, 400]
 rendaFamiliar(receitas, despesas)
 
