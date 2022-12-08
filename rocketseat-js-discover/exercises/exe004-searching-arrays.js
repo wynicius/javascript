@@ -60,19 +60,30 @@ for (const categoria of booksByCategory) {
 countAuthors()
 function countAuthors() {
     let authors = [];
-    let livrosDeAugusto = ['caralho']
 
     for( let arrayInteira of booksByCategory ) {
         for( let arraysBooks of arrayInteira.books ) {
             if (authors.indexOf(arraysBooks.author) == -1) {
                 authors.push( arraysBooks.author );
-            }
-            if (livrosDeAugusto.indexOf(arraysBooks.author) == 'Augusto Cury') {
-                livrosDeAugusto.push( arraysBooks.title);
+                
             }
         }
     }
-    console.log('A quantidade de autores é ' + authors.length);
-    console.log('os livros de Augusto Cury são' + livrosDeAugusto)
+    console.log('A quantidade é de ' + authors.length + ' autores' );
+    
+}
 
+countAugustoBooks()
+
+function countAugustoBooks() {
+    let livrosDeAugusto = []
+
+    for( let arrayInteira of booksByCategory ) {
+        for( let arraysBooks of arrayInteira.books ) {
+            if(arraysBooks.author == "Augusto Cury") {
+                livrosDeAugusto.push( arraysBooks.title )
+            }
+        }
+    }
+        console.log('Os livros de Augusto Cury são: ' + livrosDeAugusto.join(', '))
 }

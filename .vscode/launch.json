@@ -7,11 +7,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Iniciar o Programa",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\rocketseat-js-discover\\exercises\\teste.js"
+            "program": "${workspaceFolder}\\rocketseat-js-discover\\exercises\\exe004-searching-arrays.js"
         }
     ]
 }
