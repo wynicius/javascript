@@ -9,30 +9,34 @@
     <script src="temperature-convertion.js"></script>
 </head>
 <body>
-    <h1>Conversor de Moedas</h1>
+    <h1>Temperature Converter</h1>
     <h2>Do you wish to convert Celsius to Fahrenheit or to convert Fahrenheit to Celsius?</h2>
     
-        <form class="converters">
-            <label for="tempC"> <h3>Celsius(°C) to Fahrenheit(°F)</h3>
-            <br>
-            <input type="number" name="tempC" id="tempC">
-            <br>
-            <button onclick="CtoF()">Convert</button>
+    <form class="converters" autocomplete="off" onsubmit="CtoF()">
+        <label for="tempC"> <h3>Celsius(°C) to Fahrenheit(°F)</h3>
+        <br>
+        <input type="number" name="tempC" id="tempC" required placeholder="°C temperature numbers">
+        <br>
+        <button type="submit" class="submit">Convert</button>
+        </label>
+        <dialog id="C">
             <p id="celsiusToF"></p>
-            </label>
-            
-        </form>
+            <button onclick="btnCloseC()"> OK </button>
+        </dialog>
+    </form>
         
-        <form class="converters">
-            <label for="tempF"> <h3>Fahrenheit(°F) to Celsius(°C)</h3>
-            <br>
-            <input type="number" name="tempF" id="tempF">
-            <br>
-            <button onclick="FtoC()">Convert</button>
+    <form class="converters" autocomplete="off" onsubmit="FtoC()">
+        <label for="tempF"> <h3>Fahrenheit(°F) to Celsius(°C)</h3>
+        <br>
+        <input type="number" name="tempF" id="tempF" required placeholder="°F temperature numbers">
+        <br>
+        <button type="submit" class="submit">Convert</button>
+        </label>
+        <dialog id="F">
             <p id="fahrenheitToC"></p>
-            </label>
-            
-        </form>
-        
+            <button onclick="btnCloseF()"> OK </button>
+        </dialog>
+    </form>
+    
 </body>
 </html>
