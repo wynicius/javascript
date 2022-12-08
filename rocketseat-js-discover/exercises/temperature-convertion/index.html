@@ -11,7 +11,8 @@
 <body>
     <h1>Temperature Converter</h1>
     <h2>Do you wish to convert Celsius to Fahrenheit or to convert Fahrenheit to Celsius?</h2>
-    
+
+    <!-- Caixa de input de Celsius para fahrenheit -->
     <form class="converters" autocomplete="off" onsubmit="CtoF()">
         <label for="tempC"> <h3>Celsius(°C) to Fahrenheit(°F)</h3>
         <br>
@@ -24,7 +25,8 @@
             <button onclick="btnCloseC()"> OK </button>
         </dialog>
     </form>
-        
+
+    <!-- Caixa de input de fahrenheit para celsius -->
     <form class="converters" autocomplete="off" onsubmit="FtoC()">
         <label for="tempF"> <h3>Fahrenheit(°F) to Celsius(°C)</h3>
         <br>
@@ -37,6 +39,5 @@
             <button onclick="btnCloseF()"> OK </button>
         </dialog>
     </form>
-    
 </body>
 </html>

@@ -4,7 +4,7 @@
 
 let celsius, fahrenheit
 
-
+// Fluxo de Celsius para Fahrenheit
 function CtoF() {
    celsius = document.getElementById("tempC").value;
    let tempC = parseFloat(celsius);
@@ -19,6 +19,7 @@ function CtoF() {
    event.preventDefault()
 }
 
+// Fluxo de Fahrenheit para Celsius
 function FtoC() {
    fahrenheit = document.getElementById("tempF").value;
    let tempF = parseFloat(fahrenheit);
@@ -33,13 +34,14 @@ function FtoC() {
    event.preventDefault()
 }
 
+// Modal com tag <dialog> mostrando conversão de celsius para fahrenheit
 function btnCloseC() {
    let modal = document.querySelector("dialog#C")
    modal.close()
-   document.querySelector("#celsiusToF").reset()
    event.preventDefault()
 }
 
+// Modal com tag <dialog> mostrando conversão de fahrenheit para celsius
 function btnCloseF() {
    let modal = document.querySelector('dialog#F')
    modal.close()
