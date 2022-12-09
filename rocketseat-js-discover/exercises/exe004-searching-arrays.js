@@ -54,8 +54,9 @@ const totalCategories = booksByCategory.length
 
 for (const categoria of booksByCategory) {
     totalLivros = categoria.books.length;
-}
     console.log('Cada categoria possui '+totalLivros + ' livros')
+    break;
+}
 
 countAuthors()
 function countAuthors() {
@@ -74,7 +75,6 @@ function countAuthors() {
 }
 
 countAugustoBooks()
-
 function countAugustoBooks() {
     let livrosDeAugusto = []
 
@@ -86,4 +86,17 @@ function countAugustoBooks() {
         }
     }
         console.log('Os livros de Augusto Cury são: ' + livrosDeAugusto.join(', '))
+}
+
+authorsBooksSearch('T. Harv Eker')
+function authorsBooksSearch(author) {
+    let results = [];
+    for( let arrayInteira of booksByCategory ) {
+        for( let arraysBooks of arrayInteira.books ) {
+            if(arraysBooks.author == author) {
+                results.push( arraysBooks.title);
+            }
+        }
+    }
+    console.log(`Temos os seguintes livros de ${author}: ${results.join(', ')}`);
 }
