@@ -1,16 +1,17 @@
 @charset "UTF-8";
 
 *{
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     color: black;
-    padding: 0px;
 }
 body{
-    background: lightgray;
+    background:linear-gradient(to bottom,#EB6213, #F76714, #D15711, #AB470E, #6B2D09);
+    width: 100vw;
+    height: 100vh;
 }
 .converters{
     display: inline-flex;
