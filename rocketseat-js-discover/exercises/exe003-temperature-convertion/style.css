@@ -50,5 +50,8 @@ dialog{
     border-radius: 5px;
     text-align: center;
     padding:10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
 
 }
