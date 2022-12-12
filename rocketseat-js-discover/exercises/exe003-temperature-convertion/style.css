@@ -8,6 +8,7 @@
     text-align: center;
     color: black;
     overflow-x: hidden;
+    
 }
 body{
     background:linear-gradient(to bottom,#EB6213, #F76714, #D15711, #AB470E, #6B2D09);
