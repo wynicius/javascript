@@ -2,48 +2,57 @@
 //     C = (F - 32) * 5/9 
 //     F = C * 9/5 + 32
 
-let celsius, fahrenheit
 
-// Fluxo de Celsius para Fahrenheit
-function CtoF() {
-   celsius = document.getElementById("tempC").value;
-   let tempC = parseFloat(celsius);
-   let tempF = (tempC * 9/5 + 32).toFixed(0)
-
-   let modal = document.querySelector("dialog#C")
-   let elementToBeShown = document.getElementById("celsiusToF");
-   let tempConverted = tempC + "°C is equivalent to " + tempF + '°F';
-   elementToBeShown.innerHTML = tempConverted;
-   modal.showModal()
-   document.getElementById("tempC").value = ''
-   event.preventDefault()
-}
-
-// Fluxo de Fahrenheit para Celsius
-function FtoC() {
-   fahrenheit = document.getElementById("tempF").value;
-   let tempF = parseFloat(fahrenheit);
-   let tempC = ((tempF - 32) * 5/9).toFixed(0)
+function Convertion() {
+   let temperature = document.getElementById("temp").value;
    
-   let modal = document.querySelector("dialog#F")
-   let elementToBeShown = document.getElementById("fahrenheitToC");
-   let tempConverted =  tempF + "°F is equivalent to " + tempC + '°C';
-   elementToBeShown.innerHTML = tempConverted;
-   modal.showModal()
+   // caso seja Celsius to Fahrenheit
+   if (/^.*( c|c)$/i.test(temperature)) {
+
+      let tempC = Number(temperature.replace(/[cC]$/,''));
+      let tempF = (tempC * 9/5 + 32).toFixed(2)          
+      let modal = document.querySelector("dialog#window")
+      let elementToBeShown = document.getElementById("result");
+      let tempConverted =` ${tempC} °C is equal to ${tempF} °F`
+   
+      elementToBeShown.innerHTML = tempConverted;
+      modal.showModal()
+      event.preventDefault()
+
+   } else if  (temperature) { 
+      if (/^.*( f|f)$/i.test(temperature)) {
+         let tempF = Number(temperature.replace(/[fF]$/,''));
+         let tempC = ((tempF - 32) * 5/9).toFixed(2)
+         let modal = document.querySelector("dialog#window")
+         let elementToBeShown = document.getElementById("result");
+         let tempConverted =` ${tempF} °F is equal to ${tempC} °C`;
+         
+         elementToBeShown.innerHTML = tempConverted;
+         modal.showModal()
+         event.preventDefault()
+
+      }
+   }
    document.getElementById("tempF").value = ''
-   event.preventDefault()
 }
 
-// Modal com tag <dialog> mostrando conversão de celsius para fahrenheit
+// Modal com tag <dialog> mostrando a conversão
 function btnCloseC() {
-   let modal = document.querySelector("dialog#C")
-   modal.close()
+   let modal = document.querySelector("dialog#window");
+   modal.close();
    event.preventDefault()
 }
 
-// Modal com tag <dialog> mostrando conversão de fahrenheit para celsius
-function btnCloseF() {
-   let modal = document.querySelector('dialog#F')
-   modal.close()
-   event.preventDefault()
-}
+
+// let temperature = parseInt(document.getElementById("temp").value);
+   
+//    // caso seja Celsius to Fahrenheit
+//     if (!isNaN(num) && temperature.indexOf(/[cC]$/) != -1) {
+//          let tempF = (temperature * 9/5 + 32).toFixed(2)          
+//          let modal = document.querySelector("dialog#window")
+//          let elementToBeShown = document.getElementById("result");
+//          let tempConverted =` ${tempC} °C is equal to ${tempF} °F`
+      
+//          elementToBeShown.innerHTML = tempConverted;
+//          modal.showModal()
+//          event.preventDefault()

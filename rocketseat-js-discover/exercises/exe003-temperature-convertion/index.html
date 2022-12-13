@@ -9,35 +9,29 @@
     <script src="temperature-convertion.js"></script>
 </head>
 <body>
-    <h1>Temperature Converter</h1>
-    <h2>Do you wish to convert Celsius to Fahrenheit or to convert Fahrenheit to Celsius?</h2>
+    <header>
+        <h1>Temperature Converter</h1>
+        <br>
+        <h2>What do you Wish to convert?</h2>
+        <h2>Celsius to Fahrenheit or Fahrenheit to Celsius?</h2>
+    </header>
+    <main>
+        <!-- Caixa de input de Celsius para fahrenheit -->
+        <section id="">
+            <form class="converters" autocomplete="off" onsubmit="Convertion()">
+                <label for="temp">
+                    <input type="text" name="temp" id="temp" pattern="?[0-9]+ ?[cCfF]$" required placeholder="temperature + C or F" title="Por favor, adicione a temperatura junto com o símbolo dela (C ou F)">
+                        <br>
+                    <button type="submit" class="submit">Convert</button>
+                </label>
+                <dialog id="window">
+                    <p id="result"></p>
+                    <button onclick="btnCloseC()"> OK </button>
+                </dialog>
+            </form>
+        </section>
+    </main>
 
-    <!-- Caixa de input de Celsius para fahrenheit -->
-    <form class="converters" autocomplete="off" onsubmit="CtoF()">
-        <label for="tempC"> <h3>Celsius(°C) to Fahrenheit(°F)</h3>
-        <br>
-        <input type="number" name="tempC" id="tempC" required placeholder="°C temperature numbers">
-        <br>
-        <button type="submit" class="submit">Convert</button>
-        </label>
-        <dialog id="C">
-            <p id="celsiusToF"></p>
-            <button onclick="btnCloseC()"> OK </button>
-        </dialog>
-    </form>
 
-    <!-- Caixa de input de fahrenheit para celsius -->
-    <form class="converters" autocomplete="off" onsubmit="FtoC()">
-        <label for="tempF"> <h3>Fahrenheit(°F) to Celsius(°C)</h3>
-        <br>
-        <input type="number" name="tempF" id="tempF" required placeholder="°F temperature numbers">
-        <br>
-        <button type="submit" class="submit">Convert</button>
-        </label>
-        <dialog id="F">
-            <p id="fahrenheitToC"></p>
-            <button onclick="btnCloseF()"> OK </button>
-        </dialog>
-    </form>
 </body>
 </html>
