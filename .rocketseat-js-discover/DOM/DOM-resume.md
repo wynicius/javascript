@@ -204,3 +204,27 @@ document || html || head, body
         const body = document.querySelector('body');
         const header = body.querySelector('header');
         `body.insertBefore(div, header.nextSibling);`
+
+
+
+
+# Eventos 
+
+## Eventos de teclado:
+
+.onkeypress 
+.onkeydown
+.onkeyup
+
+## .addEventListener
+
+    cons h1 = document.querySelector('h1')
+
+    h1.addEventListener('click', print());
+
+    function print() {
+            console.log('print')
+        }
+
+### É bom ficar ligado no vocabulário de eventos, ein????!!!!
+
