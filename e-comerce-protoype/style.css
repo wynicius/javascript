@@ -127,7 +127,10 @@ main {
     #rowimg {
         display: flex;
         justify-content: space-around;
-
+    }
+    #shoes2{
+        border-bottom: #FF0000;
+        border-bottom-style: inset;
     }
 
 

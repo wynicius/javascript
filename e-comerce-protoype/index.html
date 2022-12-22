@@ -7,6 +7,7 @@
     <title>RocketShoes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- <script src="functions.js"></script> -->
 </head>
 <body>
     <header>
@@ -36,28 +37,29 @@
     <main>
         <picture>
             <section id="mainimg">
-                <img src="./assets/tenis-1-ampliado.png" alt="">
+                <img src="./assets/tenis-1-ampliado.png" alt="shoeAmp" id="ampShoes">
             </section>
             <section id="rowimg">
-                <img src="./assets/tenis-1-galeria.png" alt=""><img src="./assets/tenis-2-galeria.png" alt=""><img src="./assets/tenis-3-galeria.png" alt="">
+                <img src="./assets/tenis-1-galeria.png" alt="shoe1" id="shoes1" onclick="switchImage(event)">
+                <img src="./assets/tenis-2-galeria.png" alt="shoe2" id="shoes2" onclick="switchImage(event)">
+                <img src="./assets/tenis-3-galeria.png" alt="shoe3" id="shoes3" onclick="switchImage(event)">
             </section>
         </picture>
         <aside>
             <section>
                 <h1 id="bordao">
-                    Tênis esportivo para corrida top</h1>
+                    Top running sports shoes</h1>
                 <p id="description">
-                    Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e musculoso.</p>
-                <p id="amount">R$ 1.000,00</p>
-                <button><a href="#">COMPRAR</a></button>
+                    These sneakers are intended to make you even more fit, focused, and muscular.
+                </p>
+                <p id="amount">$ 1.000.00</p>
+                <button><a href="#">BUY NOW!</a></button>
             </section>
         </aside>
     </main>
 
     <footer>
-
         <iframe width="1350" height="480" src="https://www.youtube.com/embed/f3Ta3dNdVS8" title=""Get Back" Rooftop Performance | The Beatles: Get Back | Disney+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
         <ul>
             <li><a href="#" class="link">
@@ -75,7 +77,7 @@
         </ul>
 
         <nav>
-            <a href="#" class="link" id="explore">EXPLORE MAIS </a>
+            <a href="#" class="link" id="explore">EXPLORE MORE </a>
         </nav>
     </footer>
 </body>
