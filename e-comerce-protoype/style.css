@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* colors */
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #797474;
+}
+
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    font: var(--text);
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 3%;
+    left: 7.3%;
+    height: 3rem;
+    background: transparent;
+    color: var(--text);
+    
+    display: flex;
+    flex: 1;
+    flex-flow: row;
+    align-items: center;
+    gap: 6rem;
+    justify-content: center;
+
+}
+    header > img[alt="logo"]{
+        height: 3rem;
+        width: 3.8rem;
+    }
+    header label > input {
+        padding: .4rem;
+        border-radius: 5px;
+        border-style: none;
+    }
+    header a{
+        text-decoration: none;
+        color: var(--text);
+        font-weight: bold;
+    }
+
+main {
+    
+    display: flex;
+    flex-flow: row;
+    flex: 3;
+}
+    aside {
+        color: var(--text);
+        display: flex;
+        flex:37%;
+        flex-flow: column;
+        justify-content: space-around;
+        text-align: left;
+    }
+    aside section {
+        display: flex;
+        flex-flow: column;
+        padding: 2.875rem 4.5rem 0 6.6375rem;
+        gap:.4rem;
+            
+
+        }
+        #bordao{
+            font: normal normal bold 3.75rem 'Roboto';
+        }
+        #description{
+            font: 1rem ;
+            color: var(--text-description);
+            text-align: justify;
+        }
+        #amount {
+            font: normal normal bold 2.5rem/1.5 'roboto';
+        }
+        button {
+            background: var(--button);
+            width: 17.125rem;
+            height: 4.625rem;
+            border-radius: 3px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            border-style: none;
+        }
+            button > a {
+                text-decoration: none;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+                color: white;
+                font: normal normal bold 1.5rem/1.5 'roboto';
+            }
+            button:hover{
+                background-color: #0400ff;
+            }
+          
+    picture {
+        background: var(--main-background);
+
+        display: flex;
+        flex:63%;
+        flex-flow: column;
+        order: 2;
+        width: fit-content;
+        height: 57.125rem;
+        width: 56.25rem;
+    }
+    #mainimg {
+
+        padding: 10.9375rem 9.5625rem 0 9.1875rem;
+    }
+    #rowimg {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+
+footer {
+    
+    display: flex;
+    flex-basis: 10.395625rem;
+    flex-direction: row;
+    justify-content: stretch;
+    
+}
+    footer iframe {
+        flex: .1 0.1;
+        height: 10.395625rem;
+    }
+    ul{
+        display: flex;
+        background: transparent;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        display: flex;
+        flex-flow: row;
+        flex: 1;
+    }
+        ul>li>a.link{
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+    footer nav{
+        display: flex;
+        flex-direction: row;
+        background: var(--footer);
+        flex: 0.4;
+        justify-content: center;
+        border-radius: 1px 0 0 1px;
+    }
+    footer nav:hover{
+        background: #FF0000;
+    }
+        footer > nav > #explore{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            }
+            footer > nav > #explore::after{
+                content: url(assets/icon-arrow.svg);
+            }
