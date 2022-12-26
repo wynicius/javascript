@@ -16,7 +16,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    
 }
 
 body{
@@ -25,6 +25,8 @@ body{
     font: var(--text);
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    height: max-content;
+    width: 100vw;
 }
 
 header {
@@ -121,8 +123,8 @@ main {
         width: 56.25rem;
     }
     #mainimg {
-
         padding: 10.9375rem 9.5625rem 0 9.1875rem;
+
     }
     #rowimg {
         display: flex;
@@ -137,13 +139,16 @@ main {
 footer {
     
     display: flex;
-    flex-basis: 10.395625rem;
+    flex: 2;
     flex-direction: row;
-    justify-content: stretch;
+    width: 100%;
+
+
+
     
 }
     footer iframe {
-        flex: .1 0.1;
+        flex: 1 ;
         height: 10.395625rem;
     }
     ul{
@@ -155,7 +160,7 @@ footer {
         
         display: flex;
         flex-flow: row;
-        flex: 1;
+        flex: 5;
     }
         ul>li>a.link{
             color: var(--text);
@@ -167,7 +172,7 @@ footer {
         display: flex;
         flex-direction: row;
         background: var(--footer);
-        flex: 0.4;
+        flex: 1;
         justify-content: center;
         border-radius: 1px 0 0 1px;
     }
